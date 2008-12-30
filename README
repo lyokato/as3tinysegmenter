@@ -1,0 +1,31 @@
+= as3tinysegmenter
+
+このライブラリは, JavaScriptの分かち書きライブラリのTinySegmenter
+をActionScript3で動くようにしたものです。
+
+= see also
+
+本家のJavaScriptライブラリについてはこちらを参照して下さい。
+http://chasen.org/~taku/software/TinySegmenter/
+
+= example
+
+import org.coderepos.text.TinySegmenter;
+
+var segmenter:TinySegmenter = new TinySegmenter();
+var result:Array = segmenter.segment("今日、僕は学校に出かけました。");
+result.join("|"); 
+
+// 今日 | 、 | 僕 | は | 学校 | に | 出かけ | まし | た | 。
+
+= author
+
+Lyo Kato <lyo.kato _at_ gmail.com>
+
+= license
+
+new BSD license
+
+
+
+
